@@ -5,12 +5,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     index: "./src/index.tsx",
-    widget: './src/widget.tsx',
+    // widget: './src/widget.tsx',
   },
+
+  mode: 'development',
 
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
+      template: './src/index.html',
       title: 'Output Management',
     }),
   ],
@@ -22,6 +25,10 @@ module.exports = {
 
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
+
+  devServer: {
+    contentBase: './dist'
+  },
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -42,8 +49,8 @@ module.exports = {
   // assume a corresponding global variable exists and use that instead.
   // This is important because it allows us to avoid bundling all of our
   // dependencies, which allows browsers to cache those libraries between builds.
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
-  }
+  // externals: {
+  //   "react": "React",
+  //   "react-dom": "ReactDOM"
+  // }
 };
