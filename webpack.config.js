@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -16,6 +17,7 @@ module.exports = {
       template: './src/index.html',
       title: 'Output Management',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 
   output: {
@@ -27,7 +29,8 @@ module.exports = {
   devtool: "source-map",
 
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true,
   },
 
   resolve: {
