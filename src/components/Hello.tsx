@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Button} from 'antd';
 // import Button from 'antd/es/button/button';
-// import 'antd/es/button/style/css';
+import 'antd/es/button/style/css';
 
 export interface HelloProps { compiler: string; framework: string; }
 

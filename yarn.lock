@@ -4288,12 +4288,6 @@ toposort@^1.0.0:
   version "1.0.7"
   resolved "http://registry.npm.alibaba-inc.com/toposort/download/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
 
-ts-import-plugin@^1.5.5:
-  version "1.5.5"
-  resolved "http://registry.npm.alibaba-inc.com/ts-import-plugin/download/ts-import-plugin-1.5.5.tgz#3c57b6f8e42486404f4124146dd44090d98a740c"
-  dependencies:
-    tslib "^1.9.2"
-
 ts-loader@^5.1.0:
   version "5.1.0"
   resolved "http://registry.npm.alibaba-inc.com/ts-loader/download/ts-loader-5.1.0.tgz#ac13facb9360af4a4b072c851a120d17cbcaf1fa"
@@ -4304,7 +4298,7 @@ ts-loader@^5.1.0:
     micromatch "^3.1.4"
     semver "^5.0.1"
 
-tslib@^1.9.0, tslib@^1.9.2:
+tslib@^1.9.0:
   version "1.9.3"
   resolved "http://registry.npm.alibaba-inc.com/tslib/download/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 

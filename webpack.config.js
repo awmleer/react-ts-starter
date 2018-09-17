@@ -49,16 +49,7 @@ module.exports = {
         use: [
           {
             // loader: "ts-loader",
-            loader: "awesome-typescript-loader",
-            options: {
-              getCustomTransformers: () => ({
-                before: [ tsImportPluginFactory({
-                  libraryDirectory: 'es',
-                  libraryName: 'antd',
-                  style: 'css',
-                }) ]
-              })
-            }
+            loader: "awesome-typescript-loader"
           }
         ]
         // exclude: /node_modules/
