@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const tsImportPluginFactory = require('ts-import-plugin');
 
 // TODO add tree shaking feature
 
@@ -43,10 +44,34 @@ module.exports = {
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-
+      {
+        test: /\.tsx?$/,
+        use: [
+          {
+            // loader: "ts-loader",
+            loader: "awesome-typescript-loader",
+            options: {
+              getCustomTransformers: () => ({
+                before: [ tsImportPluginFactory({
+                  libraryDirectory: 'es',
+                  libraryName: 'antd',
+                  style: 'css',
+                }) ]
+              })
+            }
+          }
+        ]
+        // exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+      // { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
 
