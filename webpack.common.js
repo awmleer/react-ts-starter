@@ -1,5 +1,5 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // TODO add tree shaking feature
 
@@ -18,7 +18,7 @@ module.exports = {
   ],
 
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
 
@@ -53,4 +53,4 @@ module.exports = {
     ]
   }
 
-};
+}
