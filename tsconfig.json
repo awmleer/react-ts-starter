@@ -1,11 +1,20 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+//    "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "preserve"
+  },
+  "awesomeTypescriptLoaderOptions": {
+//    "useBabel": false,
+    "useBabel": true,
+    "babelOptions": {
+      "babelrc": true
+    },
+    "babelCore": "@babel/core"
   },
   "include": [
     "./src/**/*"

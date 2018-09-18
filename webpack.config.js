@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const tsImportPluginFactory = require('ts-import-plugin');
 
 // TODO add tree shaking feature
 
@@ -47,12 +46,15 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: [
+          // {
+          //   loader: 'babel-loader',
+          // },
           {
             // loader: "ts-loader",
             loader: "awesome-typescript-loader"
           }
-        ]
-        // exclude: /node_modules/
+        ],
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
