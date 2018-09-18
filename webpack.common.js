@@ -30,7 +30,9 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        use: [
+          'awesome-typescript-loader'
+        ],
         exclude: /node_modules/
       },
       {
@@ -38,6 +40,12 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader'
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
+        use: [
+          'file-loader'
         ]
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
