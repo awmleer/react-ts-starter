@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-//    "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "es6",
@@ -9,7 +8,6 @@
     "jsx": "preserve"
   },
   "awesomeTypescriptLoaderOptions": {
-//    "useBabel": false,
     "useBabel": true,
     "babelOptions": {
       "babelrc": true
