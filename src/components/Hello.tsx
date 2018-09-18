@@ -17,7 +17,7 @@ export class Hello extends React.Component<HelloProps, {}> {
     return (
       <div>
         <h1>Hello from {this.props.compiler} and {this.props.framework}!</h1>
-        <Button type="primary">Test Button</Button>
+        <Button type="primary">Test Button 2</Button>
       </div>
     );
   }
