@@ -5,6 +5,7 @@
     "noImplicitAny": true,
     "module": "es6",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "es6",
     "jsx": "react"

@@ -9,14 +9,14 @@ exports[`renders correctly 1`] = `
     React
     !
   </h1>
-  <button
-    className="ant-btn ant-btn-primary"
-    onClick={[Function]}
-    type="button"
+  <Button
+    block={false}
+    ghost={false}
+    loading={false}
+    prefixCls="ant-btn"
+    type="primary"
   >
-    <span>
-      Test Button 2
-    </span>
-  </button>
+    Test Button 2
+  </Button>
 </div>
 `;

@@ -586,6 +586,23 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@types/cheerio@*":
+  version "0.22.9"
+  resolved "http://registry.npm.alibaba-inc.com/@types/cheerio/download/@types/cheerio-0.22.9.tgz#b5990152604c2ada749b7f88cab3476f21f39d7b"
+
+"@types/enzyme-adapter-react-16@^1.0.3":
+  version "1.0.3"
+  resolved "http://registry.npm.alibaba-inc.com/@types/enzyme-adapter-react-16/download/@types/enzyme-adapter-react-16-1.0.3.tgz#0cf7025b036694ca8d596fe38f24162e7117acf1"
+  dependencies:
+    "@types/enzyme" "*"
+
+"@types/enzyme@*", "@types/enzyme@^3.1.14":
+  version "3.1.14"
+  resolved "http://registry.npm.alibaba-inc.com/@types/enzyme/download/@types/enzyme-3.1.14.tgz#379c26205f6e0e272f3a51d6bbdd50071a9d03a6"
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
+
 "@types/jest@^23.3.2":
   version "23.3.2"
   resolved "http://registry.npm.alibaba-inc.com/@types/jest/download/@types/jest-23.3.2.tgz#07b90f6adf75d42c34230c026a2529e56c249dbb"
@@ -2359,6 +2376,12 @@ enzyme-adapter-utils@^1.8.0:
     function.prototype.name "^1.1.0"
     object.assign "^4.1.0"
     prop-types "^15.6.2"
+
+enzyme-to-json@^3.3.4:
+  version "3.3.4"
+  resolved "http://registry.npm.alibaba-inc.com/enzyme-to-json/download/enzyme-to-json-3.3.4.tgz#67c6040e931182f183418af2eb9f4323258aa77f"
+  dependencies:
+    lodash "^4.17.4"
 
 enzyme@^3.6.0:
   version "3.6.0"
