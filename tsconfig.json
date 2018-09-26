@@ -5,8 +5,9 @@
     "noImplicitAny": true,
     "module": "es6",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "target": "es6",
-    "jsx": "preserve"
+    "jsx": "react"
   },
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
