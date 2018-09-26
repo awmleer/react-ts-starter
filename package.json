@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@types/react": "^16.4.14",

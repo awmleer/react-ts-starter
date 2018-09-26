@@ -1,13 +1,11 @@
 import * as React from "react"
 import {Button} from 'antd'
-// import Button from 'antd/es/button/button'
-// import 'antd/es/button/style/css'
 
-export interface HelloProps { compiler: string; framework: string; }
+interface Props { compiler: string; framework: string; }
 
-// 'HelloProps' describes the shape of props.
+// 'Props' describes the shape of props.
 // State is never set so we use the '{}' type.
-export class Hello extends React.Component<HelloProps, {}> {
+export class Hello extends React.Component<Props, {}> {
   x(y: any) {
     console.log(y)
   }

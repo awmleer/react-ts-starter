@@ -5,7 +5,7 @@ import {Hello} from '../Hello'
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <Hello compiler="TypeScript" framework="React" />
+      <Hello compiler="TypeScript 123" framework="React" />
     )
     .toJSON()
   expect(tree).toMatchSnapshot()

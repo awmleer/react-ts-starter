@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 <div>
   <h1>
     Hello from 
-    TypeScript
+    TypeScript 123
      and 
     React
     !
