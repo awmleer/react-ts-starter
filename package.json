@@ -13,8 +13,10 @@
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "antd": "^3.9.2",
+    "emotion": "^9.2.10",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "react-emotion": "^9.2.10"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
@@ -24,6 +26,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.2",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-emotion": "^9.2.10",
     "babel-plugin-import": "^1.9.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
