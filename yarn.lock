@@ -624,12 +624,6 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react-test-renderer@^16.0.2":
-  version "16.0.2"
-  resolved "http://registry.npm.alibaba-inc.com/@types/react-test-renderer/download/@types/react-test-renderer-16.0.2.tgz#2715eae40df08f80b3620c498598c8615693b6c6"
-  dependencies:
-    "@types/react" "*"
-
 "@types/react@*", "@types/react@^16.4.14":
   version "16.4.14"
   resolved "http://registry.npm.alibaba-inc.com/@types/react/download/@types/react-16.4.14.tgz#47c604c8e46ed674bbdf4aabf82b34b9041c6a04"
